@@ -1,0 +1,142 @@
+
+.students {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 30px;
+    height: 10%;
+    width: 100%;
+}
+
+.table-info{
+    width: 100%;
+}
+
+.table-info, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-info th, td{
+    padding: 5px;
+}
+
+.dtable table{
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-buttons button{
+    width: 30px;
+    height: 25px;
+}
+
+.addbuttondiv button{
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 25px;
+}
+
+.dashboard{
+    padding-top: 30px;
+    width: 50%;
+}
+
+.add-studen-dialog, .remove-student-dialog{
+    border: solid;
+    border-color: #3e3e3e;
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    border-radius: 5px;
+}
+.add-studen-dialog .close-button, .remove-student-dialog .close-button{
+    font-size: 20px;
+    float: right;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+.add-studen-dialog .top, .remove-student-dialog .top{
+    font-size: 30px;
+    text-align: left;
+    border-bottom: solid;
+    border-color: #3e3e3e;
+    padding-bottom: 40px;
+}
+
+.add-studen-dialog .middle .row{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+.remove-student-dialog .middle .row{
+    padding: 120px 20px;
+    font-size: 30px;
+}
+.add-studen-dialog .middle .row .text-input, .date-input, .select-input{
+    float: right;
+    width: 60%;
+    box-sizing:border-box;
+}
+.add-studen-dialog .bottom, .remove-student-dialog .bottom {
+    font-size: 30px;
+    border-top: solid;
+    border-color: #3e3e3e;
+    padding-top: 40px;
+}
+
+.add-studen-dialog .bottom button, .remove-student-dialog .bottom button{
+    float: right;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 845px){
+    .add-studen-dialog .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-studen-dialog .text-input {
+        margin-top: 5px; /* optional: add some space between the span and the input */
+    }
+}
+
+@media(max-width: 610px){
+    .add-studen-dialog .row .span{
+        font-size: 20px;
+    }
+
+    .add-studen-dialog, .remove-student-dialog{
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 458px){
+    .add-studen-dialog, .remove-student-dialog{
+        width: 60%;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+.tasks{
+    padding-top: 30px;
+    width: 50%;
+}

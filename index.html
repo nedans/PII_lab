@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student</title>
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#096230"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="CMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="base.css">
+    </head>
+    <body>
+        <header> 
+            <div class="headname">CMS</div> 
+            <div class="symbols">
+                <div class="bell-dropdown">
+                    <button class="bell-button"><i class="bell fa fa-bell"></i></button>
+                    <div class="bell-dropdown-content">
+                        <div class="dropdown-message">
+                            <span>New messages!</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="user-button"><i class="fa fa-user"></i></button>
+                <div class="name-dropdown">
+                    <button class="dropdown-button">Someone Muhehe</button>
+                    <div class="name-dropdown-content">
+                        <div class="dropdown-options">
+                            <div class="profile">
+                                <a href="#" class="profile-button">Profile</a>
+                            </div>
+                            <div class="logout">
+                                <a href="#" class="logout-button">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="wrapper" id="wrapper">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html"><b>Students</b></a></li>
+                    <li><a href="tasks.html">Tasks</a></li>
+                </ul>
+            </nav>
+            <div class="students">
+                <h1>Students</h1>
+
+                <div class="addbuttondiv">
+                    <button class="add-button" id="add-button">+</button>
+                </div>
+                
+                <div class="table" >
+                    <table class="table-info" id="table-info">
+                        <tr>
+                            <th>№</th>
+                            <th>Group</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Birthday</th>
+                            <th>Status</th>
+                            <th>Options</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>PZ-26</td>
+                            <td>Mintus Stanislav</td>
+                            <td>Male</td>
+                            <td>01.10.2005</td>
+                            <td>
+                                <i class="fa fa-circle" style="color: green;">
+                            </td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-button">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="visually-hidden">Edit</span>
+                                    </button>
+
+                                    <button class="delete-button" id="delete-button">X</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PZ-26</td>
+                            <td>Tsytsyk Svitlana</td>
+                            <td>Female</td>
+                            <td>16.07.2005</td>
+                            <td><i class="fa fa-circle" style="color: green;"></i></td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-button">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="visually-hidden">Edit</span>
+                                    </button>
+                                    <button class="delete-button">X</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>PZ-26</td>
+                            <td>Oblonenko Yana</td>
+                            <td>Female</td>
+                            <td>01.03.2005</td>
+                            <td><i class="fa fa-circle" style="color: green;"></i></td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-button">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="visually-hidden">Edit</span>
+                                    </button>
+                                    <button class="delete-button">X</button>
+                                </div>
+                            </td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <dialog class="add-studen-dialog">
+            <div class="top">
+                <span><b>Add student</b></span>
+                <button class="close-button">X</button>
+            </div>
+            <div class="middle">
+                <div class="row">
+                    <span>Group</span>
+                    <select name="group" class="select-input" id="group-select-input">
+                        <option value="PZ-21">PZ-21</option>
+                        <option value="PZ-22">PZ-22</option>
+                        <option value="PZ-23">PZ-23</option>
+                        <option value="PZ-24">PZ-24</option>
+                        <option value="PZ-25">PZ-25</option>
+                        <option value="PZ-26">PZ-26</option>
+                        <option value="PZ-27">PZ-27</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <span>First name</span>
+                    <input type="text" class="text-input" id="firstname-input">
+                </div>
+                <div class="row">
+                    <span>Last name</span>
+                    <input type="text" class="text-input" id="lastname-input">  
+                </div>
+                <div class="row">
+                    <span>Gender</span>
+                    <select name="gender" class="select-input" id="gender-input">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <span>Birthday</span>
+                    <input type="date" class="date-input" id="birthday-input">
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="close-button-bottom">Close</button>
+                <button class="create-button">Create</button>
+            </div>
+        </dialog>
+    
+        <dialog class="remove-student-dialog">
+            <div class="top">
+                <span><b>Warning</b></span>
+                <button class="close-button">X</button>
+            </div>
+            <div class="middle">
+                <div class="row"><span>Are you sure you want to delete this user?</span></div>
+            </div>
+            <div class="bottom">
+                <button class="close-button-bottom">Cansel</button>
+                <button class="confirm-button">OK</button>
+            </div>
+        </dialog>
+
+        <script src="source.js"></script>
+    </body>
+</html>
